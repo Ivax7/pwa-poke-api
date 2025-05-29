@@ -1,0 +1,25 @@
+<div class="container py-5">
+
+  <!-- Botones para cambiar entre vista lista y cuadrícula -->
+  <div class="d-flex justify-content-end mb-4">
+    <button class="btn btn-outline-primary me-2" (click)="toggleView('list')">List View</button>
+    <button class="btn btn-outline-success" (click)="toggleView('grid')">Table View</button>
+  </div>
+
+  <!-- Spinner de carga -->
+  <div *ngIf="loading" class="spinner-container">
+    <mat-spinner diameter="50"></mat-spinner>
+  </div>
+
+  <!-- Vista LISTA -->
+  <div *ngIf="viewMode === 'list'" class="list-group animate__animated animate__fadeIn">
+    <app-card *ngFor="let pokemon of pokemons" [pokemon]="pokemon"></app-card>
+  </div>
+  
+  <!-- Vista TABLA -->
+  <div *ngIf="viewMode === 'grid'" class="animate__animated animate__fadeIn">
+    <app-grid [pokemons]="pokemons"></app-grid>
+  </div>
+
+
+</div>

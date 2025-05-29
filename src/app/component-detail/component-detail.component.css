@@ -1,0 +1,12 @@
+.pokemon-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pokemon-card {
+  background-color: #f8f3e9;
+  border: 2px solid #e0d2ba;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
