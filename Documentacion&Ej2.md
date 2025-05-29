@@ -43,4 +43,6 @@ Soporte de navegadores: La activación del Service Worker se restringe a entorno
 
 
 
-Enlaces:
+Enlace repositorio: https://ivax7.github.io/pwa-poke-api/
+Enlace web: https://ivax7.github.io/pwa-poke-api/
+
